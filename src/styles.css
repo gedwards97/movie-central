@@ -1,4 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    background-color: #0B0C10;
+    color: #66FCF1;
+}
+
+header {
+    background-color: transparent;
+    padding: 1em 0;
+}
+
+header .container i {
+    color: #fff;
+}
+
+header a {
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+header nav {
+    float: left;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    padding: 1em;
+    transition: 0.4s;
+}
+
+header nav ul li a i {
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+header nav ul li a i:hover {
+    color: #66FCF1;
+}
+
+.logo {
+    color: #66FCF1;
+    font-weight: bold;
+}
+
+
+
+
+
