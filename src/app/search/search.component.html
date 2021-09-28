@@ -1,4 +1,4 @@
-<div *ngIf="!title; else forminfo">
+<div class="search-container">
     <h2>Movie Search!</h2>
     <form [formGroup]="rForm" (ngSubmit)="searchSubmit(rForm.value)">
         <div class="form-container">
@@ -12,11 +12,4 @@
     </form>
 </div>
 
-<!-- This is shown if once the form has been successfully submitted -->
-<ng-template #forminfo>
-    <div class="form-container">
-        <h2>{{ title }}</h2>
-    </div>
-    <!-- <app-search-result [title]="title"></app-search-result> -->
-</ng-template>
 

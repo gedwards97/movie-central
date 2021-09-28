@@ -1,6 +1,6 @@
 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+    font-family: 'Lobster', cursive;
+    font-size: 125px;
     color: #66FCF1;
     line-height: 125px;
     text-align: center;
@@ -13,7 +13,7 @@ h2 {
 form {
     /* Aesthetics */
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     color: #C5C6C7;
     /* Positioning */
     position: absolute;
@@ -22,15 +22,28 @@ form {
     transform: translate(-50%, -50%); 
 }
 
-label, input {
+.form-container {
+    width: 50vw;
+}
+
+input {
     display: block;
+
+}
+
+input[type="text"] {
+    height: 30px;
+    font-size: 20px;
+    width: 50%;
+    margin: 15px auto;
+    
 }
 
 input[type=submit] {
     font-size: 30px;
-    margin: 0 5rem;
-    padding: 10px 40px;
-    width: 70%;
+    padding: 10px 40px; 
+    width: 30%;
+    margin: auto;
 
     background-color: #1F2833;
     color: #66FCF1;
@@ -41,6 +54,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     cursor: pointer;
+    margin: auto;
     background-color: #66FCF1;
     color: #1F2833;
 }

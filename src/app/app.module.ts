@@ -13,6 +13,8 @@ import { SearchResultComponent } from './search-result/search-result.component';
 // Forms Module
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// Http CLient Module
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule

@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navigation {
+    /* display: inline-block;
+    overflow: hidden; */
+    height: 75px;
+    text-align: left;
+}
+
+ul {
+    background-color: transparent;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+ul li a i {
+    color: #C5C6C7;
+    font-size: 70px;
+    padding-left: 10px;
+    
+    /* font-size: 50px; */
+}
+
+ul li a i:hover {
+    color: #66FCF1;
+}

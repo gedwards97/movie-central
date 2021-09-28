@@ -1,1 +1,31 @@
-<h2>{{ movieTitle }}</h2>
+<div *ngIf="searchResult?.length > 0; else noResult" class="search-results">
+    <h1>{{ movieTitle }}</h1>
+    <div class="movie-container">
+        <div *ngIf="posterPath" class="movie-poster">
+            <img src="{{ imageURL + imageWidth + posterPath}}" alt="{{ movieTitle }}">
+        </div>
+    
+        <div class="movie-details">
+            <div class="detail">
+                <p>Description: </p>
+                <p>{{ movieDescription }}</p>
+            </div>
+            <div class="detail">
+                <p>Release Date: </p>
+                <p>{{ releaseDate }}</p>
+            </div>
+            <div class="detail">
+                <p>Score: </p>
+                <div class="score-container">
+                    <div  class="score-bar" [ngStyle]="{'width': barWidth +'px', 'background-color': barColor}">
+                        <p class="score" [ngStyle]="{'color': barTextColor}">{{ movieScore }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #noResult>
+    <h1>Hell no</h1>
+</ng-template>
