@@ -1,1 +1,22 @@
-<p>search works!</p>
+<div *ngIf="!title; else forminfo">
+    <h2>Movie Search!</h2>
+    <form [formGroup]="rForm" (ngSubmit)="searchSubmit(rForm.value)">
+        <div class="form-container">
+            <input type="text" formControlName="title" placeholder="Movie Title">
+            <div class="alert" *ngIf="!rForm.controls['title'].valid && rForm.controls['title'].touched">
+                {{ titleAlert }}
+            </div>
+
+            <input type="submit" value="Search Film" [disabled]="!rForm.valid">
+        </div>
+    </form>
+</div>
+
+<!-- This is shown if once the form has been successfully submitted -->
+<ng-template #forminfo>
+    <div class="form-container">
+        <h2>{{ title }}</h2>
+    </div>
+    <!-- <app-search-result [title]="title"></app-search-result> -->
+</ng-template>
+

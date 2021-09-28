@@ -8,16 +8,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
 import { FindComponent } from './find/find.component';
 import { HomeComponent } from './home/home.component';
+import { SearchResultComponent } from './search-result/search-result.component';
+
+// Forms Module
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     FindComponent,
-    HomeComponent
+    HomeComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
